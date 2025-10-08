@@ -43,7 +43,7 @@ class ItemsPageState extends State<ItemsPage> {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF3A0CA3), Color(0xFFF72585)],
+            colors: [Color(0xFFC8B8AA), Color(0xFF726760)],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -56,11 +56,11 @@ class ItemsPageState extends State<ItemsPage> {
                 child: Row(
                   children: [
                     Text(
-                      '🛍️ Thrift Store',
-                      style: GoogleFonts.poppins(
-                        fontSize: 24,
+                      '🛍️ Thrift & Drift',
+                      style: GoogleFonts.alegreyaSc(
+                        fontSize: 30,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white,
+                        color: Colors.black,
                       ),
                     ),
                     const Spacer(),
@@ -93,7 +93,7 @@ class ItemsPageState extends State<ItemsPage> {
                         return Center(
                           child: Text(
                             'Oops! ${snap.error}',
-                            style: GoogleFonts.poppins(color: Colors.redAccent),
+                            style: GoogleFonts.gaegu(color: Colors.redAccent),
                           ),
                         );
                       }
@@ -102,7 +102,7 @@ class ItemsPageState extends State<ItemsPage> {
                         return Center(
                           child: Text(
                             'No treasures yet 🧐',
-                            style: GoogleFonts.poppins(
+                            style: GoogleFonts.gaegu(
                               color: Colors.white70,
                               fontSize: 18,
                             ),
@@ -184,7 +184,7 @@ class ItemsPageState extends State<ItemsPage> {
                                         item.title,
                                         maxLines: 1,
                                         overflow: TextOverflow.ellipsis,
-                                        style: GoogleFonts.poppins(
+                                        style: GoogleFonts.gaegu(
                                           fontSize: 16,
                                           fontWeight: FontWeight.w600,
                                         ),
@@ -192,7 +192,7 @@ class ItemsPageState extends State<ItemsPage> {
                                       const SizedBox(height: 6),
                                       Text(
                                         'Php ${item.price.toStringAsFixed(2)}',
-                                        style: GoogleFonts.poppins(
+                                        style: GoogleFonts.gaegu(
                                           fontSize: 14,
                                           color: const Color(0xFF7209B7),
                                         ),
@@ -202,7 +202,7 @@ class ItemsPageState extends State<ItemsPage> {
                                         'By ${item.uploadedBy}',
                                         maxLines: 1,
                                         overflow: TextOverflow.ellipsis,
-                                        style: GoogleFonts.poppins(
+                                        style: GoogleFonts.gaegu(
                                           fontSize: 12,
                                           color: Colors.grey[600],
                                         ),
@@ -213,7 +213,7 @@ class ItemsPageState extends State<ItemsPage> {
                                         child: ElevatedButton(
                                           style: ElevatedButton.styleFrom(
                                             backgroundColor:
-                                            const Color(0xFFF72585),
+                                            const Color(0xFF000000),
                                             padding:
                                             const EdgeInsets.symmetric(
                                                 vertical: 10),
@@ -231,7 +231,7 @@ class ItemsPageState extends State<ItemsPage> {
                                           },
                                           child: Text(
                                             'Details',
-                                            style: GoogleFonts.poppins(
+                                            style: GoogleFonts.gaegu(
                                                 color: Colors.white),
                                           ),
                                         ),
@@ -253,12 +253,17 @@ class ItemsPageState extends State<ItemsPage> {
               Padding(
                 padding: const EdgeInsets.all(16),
                 child: FloatingActionButton.extended(
-                  backgroundColor: Colors.white,
+                  backgroundColor: Colors.black,
                   foregroundColor: const Color(0xFF3A0CA3),
                   icon: const Icon(Icons.add),
                   label: Text(
                     'Add New',
-                    style: GoogleFonts.poppins(fontWeight: FontWeight.w600),
+                    style: GoogleFonts.gaegu(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600),
+
+
+
                   ),
                   onPressed: () async {
                     await Navigator.pushNamed(context, '/add');

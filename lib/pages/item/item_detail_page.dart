@@ -22,7 +22,7 @@ class ItemDetailPage extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFFF72585), Color(0xFF3A0CA3)],
+            colors: [Color(0xFFC8B8AA), Color(0xFF726760)],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
@@ -40,7 +40,7 @@ class ItemDetailPage extends StatelessWidget {
                 return Center(
                   child: Text(
                     'Error: ${snap.error}',
-                    style: GoogleFonts.poppins(color: Colors.redAccent),
+                    style: GoogleFonts.gaegu(color: Colors.redAccent),
                   ),
                 );
               }
@@ -49,7 +49,7 @@ class ItemDetailPage extends StatelessWidget {
                 return Center(
                   child: Text(
                     'Item not found 🤷',
-                    style: GoogleFonts.poppins(color: Colors.white),
+                    style: GoogleFonts.gaegu(color: Colors.white),
                   ),
                 );
               }
@@ -70,10 +70,10 @@ class ItemDetailPage extends StatelessWidget {
                           const SizedBox(width: 8),
                           Text(
                             'Details',
-                            style: GoogleFonts.poppins(
-                              fontSize: 22,
+                            style: GoogleFonts.alegreyaSc(
+                              fontSize: 30,
                               fontWeight: FontWeight.w600,
-                              color: Colors.white,
+                              color: Colors.black,
                             ),
                           ),
                         ],
@@ -117,7 +117,7 @@ class ItemDetailPage extends StatelessWidget {
                       // Title & price
                       Text(
                         item.title,
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.gaegu(
                           fontSize: 26,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
@@ -126,7 +126,7 @@ class ItemDetailPage extends StatelessWidget {
                       const SizedBox(height: 8),
                       Text(
                         '₱ ${item.price.toStringAsFixed(2)}',
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.gaegu(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
                           color: Colors.yellowAccent,
@@ -146,7 +146,7 @@ class ItemDetailPage extends StatelessWidget {
                           children: [
                             Text(
                               'Description',
-                              style: GoogleFonts.poppins(
+                              style: GoogleFonts.gaegu(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w600,
                                 color: Colors.deepPurple,
@@ -155,7 +155,7 @@ class ItemDetailPage extends StatelessWidget {
                             const SizedBox(height: 8),
                             Text(
                               item.description,
-                              style: GoogleFonts.poppins(fontSize: 14),
+                              style: GoogleFonts.gaegu(fontSize: 14),
                             ),
                           ],
                         ),
@@ -191,7 +191,7 @@ class ItemDetailPage extends StatelessWidget {
                     right: 16,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellowAccent,
+                        backgroundColor: Colors.black,
                         padding: const EdgeInsets.symmetric(vertical: 16),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -210,9 +210,9 @@ class ItemDetailPage extends StatelessWidget {
                             context: context,
                             builder: (_) => AlertDialog(
                               title: Text('Contact Owner',
-                                  style: GoogleFonts.poppins()),
+                                  style: GoogleFonts.gaegu()),
                               content: SelectableText(email,
-                                  style: GoogleFonts.poppins()),
+                                  style: GoogleFonts.gaegu()),
                               actions: [
                                 TextButton(
                                   onPressed: () => Navigator.pop(context),
@@ -226,10 +226,10 @@ class ItemDetailPage extends StatelessWidget {
                       },
                       child: Text(
                         'Contact Owner',
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.gaegu(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
-                          color: Colors.deepPurple,
+                          color: Colors.white,
                         ),
                       ),
                     ),

@@ -12,8 +12,8 @@ import 'pages/item/item_detail_page.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Supabase.initialize(
-    url: 'https://dajktqhapgaeegfcgtro.supabase.co',
-    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRhamt0cWhhcGdhZWVnZmNndHJvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY1OTczMDEsImV4cCI6MjA2MjE3MzMwMX0.VBQg5K_ePUumQlxt3MG2YCtNkdnNcwUgqnV8rm5Yekc',
+    url: 'https://vfpsbjekenlbuutifszg.supabase.co',
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZmcHNiamVrZW5sYnV1dGlmc3pnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk4ODgwNDAsImV4cCI6MjA3NTQ2NDA0MH0.h54Egx9EQovGFKI1SI5uOxe5bGhhh4ht8JNFjIvjT-4',
   );
   runApp(const App());
 }
@@ -34,7 +34,7 @@ class AppView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Thrift Store',
+      title: 'Thrift and drift',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const AuthGate(),
       routes: {

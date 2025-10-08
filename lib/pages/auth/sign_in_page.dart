@@ -36,8 +36,8 @@ class _SignInPageState extends State<SignInPage> {
                   decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
-                        Color(0xFFF72585), // vibrant pink
-                        Color(0xFF3A0CA3), // deep purple
+                        Color(0xFFC8B8AA), // vibrant pink
+                        Color(0xFF726760), // deep purple
                       ],
                       begin: Alignment.centerLeft,
                       end: Alignment.centerRight,
@@ -48,12 +48,12 @@ class _SignInPageState extends State<SignInPage> {
                     ),
                   ),
                   child: Text(
-                    '🛍️ Thrift Store',
+                    '🛍️ Thrift & Drift',
                     textAlign: TextAlign.center,
-                    style: GoogleFonts.montserrat(
+                    style: GoogleFonts.alegreyaSc(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: Colors.black,
                     ),
                   ),
                 ),
@@ -105,7 +105,7 @@ class _SignInPageState extends State<SignInPage> {
                           height: 50,
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFFF72585),
+                              backgroundColor: const Color(0xFF212A27),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
@@ -137,7 +137,7 @@ class _SignInPageState extends State<SignInPage> {
                             )
                                 : Text(
                               'Sign In',
-                              style: GoogleFonts.montserrat(
+                              style: GoogleFonts.alegreyaSc(
                                 color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -151,6 +151,7 @@ class _SignInPageState extends State<SignInPage> {
                           child: Text(
                             'Don’t have an account? Sign Up',
                             style: GoogleFonts.montserrat(
+                              fontWeight: FontWeight.bold,
                               color: const Color(0xFF3A0CA3),
                             ),
                           ),

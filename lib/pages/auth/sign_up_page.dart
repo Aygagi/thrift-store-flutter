@@ -37,8 +37,8 @@ class _SignUpPageState extends State<SignUpPage> {
                   decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
-                        Color(0xFFF72585),
-                        Color(0xFF3A0CA3),
+                        Color(0xFFC8B8AA),
+                        Color(0xFF726760),
                       ],
                       begin: Alignment.centerLeft,
                       end: Alignment.centerRight,
@@ -51,10 +51,10 @@ class _SignUpPageState extends State<SignUpPage> {
                   child: Text(
                     'Create Account',
                     textAlign: TextAlign.center,
-                    style: GoogleFonts.montserrat(
+                    style: GoogleFonts.alegreyaSc(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: Colors.black,
                     ),
                   ),
                 ),
@@ -125,7 +125,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           height: 50,
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFF3A0CA3),
+                              backgroundColor: const Color(0xFF212A27),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
@@ -158,7 +158,7 @@ class _SignUpPageState extends State<SignUpPage> {
                             )
                                 : Text(
                               'Sign Up',
-                              style: GoogleFonts.montserrat(
+                              style: GoogleFonts.alegreyaSc(
                                 color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -188,7 +188,8 @@ class _SignUpPageState extends State<SignUpPage> {
                   onPressed: () => Navigator.pushNamed(context, '/signin'),
                   child: Text(
                     'Already have an account? Sign In',
-                    style: GoogleFonts.montserrat(color: const Color(0xFF3A0CA3)),
+                    style: GoogleFonts.montserrat(fontWeight: FontWeight.bold,
+                        color: const Color(0xFF3A0CA3)),
                   ),
                 ),
               ],
